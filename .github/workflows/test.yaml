@@ -1,0 +1,17 @@
+name: Koo-Emma
+
+on:
+  push:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: test
+        run: echo "How are you all doing today"
+      - name: show current directory
+        run: pwd
+      - name: List files
+        run: ls -la
+
