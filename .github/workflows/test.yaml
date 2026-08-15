@@ -2,6 +2,9 @@ name: Koo-Emma
 
 on:
   push:
+    branches:
+      - master
+
 
 jobs:
   hello:
@@ -13,5 +16,5 @@ jobs:
       - name: show current directory
         run: pwd
       - name: List files
-        run: ls -la
+        run: ls -la 
 
