@@ -11,10 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: action/checkout@v4
+
       - name: test
         run: echo "How are you all doing today"
+
       - name: show current directory
         run: pwd
+
       - name: List files
         run: ls -la 
 
